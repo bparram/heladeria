@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Copa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crear Nueva Copa</h1>
+    <form action="/crear_copa" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Copa Tradicional" required>
+
+        <label for="volumen">Tipo vaso (onz):</label>
+        <input type="number" id="volumen" name="volumen" placeholder="Ej. 8" required>
+
+        <label for="ingredientes">Nombres de Ingredientes:</label>
+        <textarea id="ingredientes" name="ingredientes" placeholder="Ingrese los nombres separados por comas (Ej. Fresa, Chocolate, Leche)" required></textarea>
+        <div class="note">* Asegúrese de ingresar los nombres de los ingredientes separados por comas.</div>
+
+        <button type="submit">Crear Copa</button>
+    </form>
+</body>
+</html>

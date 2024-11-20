@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar Ingrediente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ingresar Ingrediente</h1>
+    <form action="/ingresar_ingredientes" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Fresa" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" placeholder="Ej. 120.50" required>
+
+        <label for="calorias">Calorías (kcal):</label>
+        <input type="number" id="calorias" name="kilo calorias" placeholder="Ej. 150" required>
+
+        <label for="inventario">Inventario:</label>
+        <input type="number" id="inventario" name="inventario" placeholder="Ej. 50" required>
+
+        <label for="es_vegetariano">vegetariano:</label>
+        <input type="text" id="es_vegetariano" name="es_vegetariano" placeholder="Ej. Si" required>
+        <button type="submit">Ingresar Ingrediente</button>
+    </form>
+</body>
+</html>

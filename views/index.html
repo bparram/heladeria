@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Heladería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            width: 200px;
+            padding: 15px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Heladería</h1>
+    <div class="button-container">
+        <a href="/menu" style="order: 1;"><button>Ver Menú</button></a>
+        <a href="/crear_malteada" style="order: 2;"><button>Crear Malteada</button></a>
+        <a href="/crear_copa" style="order: 3;"><button>Crear Copa</button></a>
+        <a href="/ingresar_ingredientes" style="order: 4;"><button>Ingresar Ingrediente</button></a>
+    </div>
+</body>
+</html>
