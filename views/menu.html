@@ -58,14 +58,9 @@
             {% for producto in productos %}
             <tr>
                 <td>{{ producto.nombre }}</td>
-                <td>${{ producto.precio_publico }}</td>
-                <td>
-                    {% if producto.volumen %}
-                        Malteada
-                    {% else %}
-                        Copa
-                    {% endif %}
-                </td>
+                <td>{{ producto.precio_publico }}</td>
+                <td>{{ producto.tipo_producto }}</td>
+                
             </tr>
             {% endfor %}
         </tbody>

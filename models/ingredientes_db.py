@@ -13,3 +13,6 @@ class Ingrediente(db.Model):
 
     def es_sano(self):
         return sano(self.calorias,self.vegetariano)
+    
+    def abastecer(self,cantidad):
+        self.inventario += cantidad
